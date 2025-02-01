@@ -164,3 +164,4 @@ C:\Users\canar\RiderProjects\LogiWare\Logiware.Test\bin\Debug\net8.0\FluentValid
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Test\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Test\bin\Debug\net8.0\Npgsql.dll
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Test\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+c:\Users\canar\RiderProjects\LogiWare\Logiware.Test\obj\Debug\net8.0\Logiware.Test.sourcelink.json

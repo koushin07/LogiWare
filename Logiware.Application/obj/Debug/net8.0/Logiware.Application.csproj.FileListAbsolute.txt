@@ -13,3 +13,4 @@ C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Debug\net8.0\Logi
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Debug\net8.0\refint\Logiware.Application.dll
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Debug\net8.0\Logiware.Application.pdb
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Debug\net8.0\ref\Logiware.Application.dll
+c:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Debug\net8.0\Logiware.Application.sourcelink.json

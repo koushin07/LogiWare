@@ -9,3 +9,4 @@ C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\refint\Logiware.Domain.dll
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.Domain.pdb
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\ref\Logiware.Domain.dll
+c:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.Domain.sourcelink.json

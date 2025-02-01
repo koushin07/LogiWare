@@ -232,7 +232,20 @@ public partial class MyDbContext : DbContext
                 }
             ]);
 
+        modelBuilder.Entity<User>().HasData(
+                    [
+                        new User()
+                {
+                    Id=2,
+                    Username = "naawan",
+                    Email = "naawan@admin.com",
+                    PasswordHash = hash,
+                    PasswordSalt = salt,
+                   Site = null,
+            CreatedAt = DateTime.UtcNow,
 
+                }
+                    ]);
 
     }
 

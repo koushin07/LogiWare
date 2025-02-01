@@ -17,3 +17,4 @@ C:\Users\canar\RiderProjects\LogiWare\Logiware.Infrastructure\obj\Debug\net8.0\r
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Infrastructure\obj\Debug\net8.0\Logiware.Infrastructure.pdb
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Infrastructure\obj\Debug\net8.0\Logiware.Infrastructure.genruntimeconfig.cache
 C:\Users\canar\RiderProjects\LogiWare\Logiware.Infrastructure\obj\Debug\net8.0\ref\Logiware.Infrastructure.dll
+c:\Users\canar\RiderProjects\LogiWare\Logiware.Infrastructure\obj\Debug\net8.0\Logiware.Infrastructure.sourcelink.json

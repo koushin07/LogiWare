@@ -148,3 +148,4 @@ C:\Users\canar\RiderProjects\LogiWare\Logiware.API\bin\Debug\net8.0\FluentValida
 C:\Users\canar\RiderProjects\LogiWare\Logiware.API\bin\Debug\net8.0\Logiware.API.staticwebassets.runtime.json
 C:\Users\canar\RiderProjects\LogiWare\Logiware.API\bin\Debug\net8.0\Npgsql.dll
 C:\Users\canar\RiderProjects\LogiWare\Logiware.API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+c:\Users\canar\RiderProjects\LogiWare\Logiware.API\obj\Debug\net8.0\Logiware.API.sourcelink.json
