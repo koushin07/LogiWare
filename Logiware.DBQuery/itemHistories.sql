@@ -1,0 +1,6 @@
+SELECT TOP (1000) [Id]
+      ,[OwnershipId]
+      ,[Location]
+      ,[Status]
+      ,[CreatedAt]
+  FROM [logiware].[dbo].[ItemHistories]

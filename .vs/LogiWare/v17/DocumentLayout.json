@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\canar\\RiderProjects\\LogiWare\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0426AB01-8D23-4B3F-AFDE-4D4819587D96}|Logiware.API\\Logiware.API.csproj|c:\\users\\canar\\riderprojects\\logiware\\logiware.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0426AB01-8D23-4B3F-AFDE-4D4819587D96}|Logiware.API\\Logiware.API.csproj|solutionrelative:logiware.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0426AB01-8D23-4B3F-AFDE-4D4819587D96}|Logiware.API\\Logiware.API.csproj|c:\\users\\canar\\riderprojects\\logiware\\logiware.api\\extensions\\runanymigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0426AB01-8D23-4B3F-AFDE-4D4819587D96}|Logiware.API\\Logiware.API.csproj|solutionrelative:logiware.api\\extensions\\runanymigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0426AB01-8D23-4B3F-AFDE-4D4819587D96}|Logiware.API\\Logiware.API.csproj|c:\\users\\canar\\riderprojects\\logiware\\logiware.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0426AB01-8D23-4B3F-AFDE-4D4819587D96}|Logiware.API\\Logiware.API.csproj|solutionrelative:logiware.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F4E0E2-B719-4859-9CF3-BCE6F486EEE9}|Logiware.Domain\\Logiware.Domain.csproj|c:\\users\\canar\\riderprojects\\logiware\\logiware.domain\\logiware.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{11F4E0E2-B719-4859-9CF3-BCE6F486EEE9}|Logiware.Domain\\Logiware.Domain.csproj|solutionrelative:logiware.domain\\logiware.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAA6F7C-D27F-46E1-A405-99029B23FEE5}|Logiware.Infrastructure\\Logiware.Infrastructure.csproj|c:\\users\\canar\\riderprojects\\logiware\\logiware.infrastructure\\logiware.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6CAA6F7C-D27F-46E1-A405-99029B23FEE5}|Logiware.Infrastructure\\Logiware.Infrastructure.csproj|solutionrelative:logiware.infrastructure\\logiware.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AEB9189-1C23-47AD-9018-B217863A83D3}|Logiware.Application\\Logiware.Application.csproj|c:\\users\\canar\\riderprojects\\logiware\\logiware.application\\logiware.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9AEB9189-1C23-47AD-9018-B217863A83D3}|Logiware.Application\\Logiware.Application.csproj|solutionrelative:logiware.application\\logiware.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0426AB01-8D23-4B3F-AFDE-4D4819587D96}|Logiware.API\\Logiware.API.csproj|c:\\users\\canar\\riderprojects\\logiware\\logiware.api\\logiware.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0426AB01-8D23-4B3F-AFDE-4D4819587D96}|Logiware.API\\Logiware.API.csproj|solutionrelative:logiware.api\\logiware.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1272570040:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:904186998:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1867177759:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1718905137:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2136274433:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1029136102:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1686573605:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1113725585:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:474250270:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:627099191:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:280150959:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:919626274:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\Program.cs",
+              "RelativeDocumentMoniker": "Logiware.API\\Program.cs",
+              "ToolTip": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\Program.cs",
+              "RelativeToolTip": "Logiware.API\\Program.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAYwEYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T07:23:12.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RunAnyMigration.cs",
+              "DocumentMoniker": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\Extensions\\RunAnyMigration.cs",
+              "RelativeDocumentMoniker": "Logiware.API\\Extensions\\RunAnyMigration.cs",
+              "ToolTip": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\Extensions\\RunAnyMigration.cs",
+              "RelativeToolTip": "Logiware.API\\Extensions\\RunAnyMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T07:22:39.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\Dockerfile",
+              "RelativeDocumentMoniker": "Logiware.API\\Dockerfile",
+              "ToolTip": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\Dockerfile",
+              "RelativeToolTip": "Logiware.API\\Dockerfile",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-01T06:52:40.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Logiware.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.Domain\\Logiware.Domain.csproj",
+              "RelativeDocumentMoniker": "Logiware.Domain\\Logiware.Domain.csproj",
+              "ToolTip": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.Domain\\Logiware.Domain.csproj",
+              "RelativeToolTip": "Logiware.Domain\\Logiware.Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-28T18:00:29.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logiware.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.Infrastructure\\Logiware.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Logiware.Infrastructure\\Logiware.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.Infrastructure\\Logiware.Infrastructure.csproj",
+              "RelativeToolTip": "Logiware.Infrastructure\\Logiware.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-28T18:00:16.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Logiware.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.Application\\Logiware.Application.csproj",
+              "RelativeDocumentMoniker": "Logiware.Application\\Logiware.Application.csproj",
+              "ToolTip": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.Application\\Logiware.Application.csproj",
+              "RelativeToolTip": "Logiware.Application\\Logiware.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-28T18:00:11.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Logiware.API.csproj",
+              "DocumentMoniker": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\Logiware.API.csproj",
+              "RelativeDocumentMoniker": "Logiware.API\\Logiware.API.csproj",
+              "ToolTip": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\Logiware.API.csproj",
+              "RelativeToolTip": "Logiware.API\\Logiware.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-28T17:58:54.071Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

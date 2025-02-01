@@ -1,0 +1,200 @@
+<div class=" ">
+  <!-- Site Details Section -->
+  <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Site Information</h2>
+
+    <div class="space-y-4">
+      <!-- Site Name -->
+      <div>
+        <label hlmLabel class="block text-sm font-medium text-gray-700"
+          >Site Name</label
+        >
+        <input
+          disabled
+          hlmInput
+          type="text"
+          [value]="user?.site?.name"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Site Email -->
+      <div>
+        <label hlmLabel class="block text-sm font-medium text-gray-700"
+          >Site Email</label
+        >
+        <input
+          disabled
+          hlmInput
+          type="email"
+          [value]="user?.email"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Password Change Section -->
+  <!-- <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Change Password</h2>
+
+    <form (ngSubmit)="changePassword()" class="space-y-4">
+      <div>
+        <label hlmLabel class="block text-sm font-medium text-gray-700"
+          >Current Password</label
+        >
+        <input
+          hlmInput
+          type="password"
+          [(ngModel)]="currentPassword"
+          name="currentPassword"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+        />
+      </div>
+
+      <div>
+        <label hlmLabel class="block text-sm font-medium text-gray-700"
+          >New Password</label
+        >
+        <input
+          hlmInput
+          type="password"
+          [(ngModel)]="newPassword"
+          name="newPassword"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+        />
+      </div>
+
+      <div>
+        <label hlmLabel class="block text-sm font-medium text-gray-700"
+          >Confirm New Password</label
+        >
+
+        <input
+          hlmInput
+          type="password"
+          [(ngModel)]="confirmPassword"
+          name="confirmPassword"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+        />
+      </div>
+
+      <button hlmBtn
+        type="submit"
+            >
+        Change Password
+      </button>
+    </form>
+  </div> -->
+
+  <!-- Personnel List Section -->
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold text-gray-800">Personnel List</h2>
+      <hlm-dialog>
+        <button id="edit-profile" brnDialogTrigger hlmBtn>Add Personnel</button>
+        <hlm-dialog-content
+          class="sm:max-w-[425px]"
+          *brnDialogContent="let ctx"
+        >
+          <hlm-dialog-header>
+            <h3 hlmDialogTitle>New Personnel</h3>
+            <p hlmDialogDescription>Personal information</p>
+          </hlm-dialog-header>
+          <form [formGroup]="personnelForm" (ngSubmit)="addPersonnel(ctx)">
+            <div class="grid gap-4">
+
+              <div class="flex flex-col space-y-3">
+                <label
+                  hlmLabel
+                  for="firstName"
+                  class="block text-sm font-medium text-gray-700"
+                  >First Name</label
+                >
+                <input
+                  hlmInput
+                  id="firstName"
+                  formControlName="firstName"
+                  class="col-span-3"
+                  type="text"
+                />
+                <hlm-hint></hlm-hint>
+              </div>
+              <div class="flex flex-col space-y-3">
+                <label
+                  hlmLabel
+                  for="lastName"
+                  class="block text-sm font-medium text-gray-700"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  hlmInput
+                  id="lastName"
+                  formControlName="lastName"
+                  class="col-span-3"
+                />
+                <hlm-hint></hlm-hint>
+              </div>
+              <hlm-form-field>
+                <brn-select
+                  formControlName="role"
+                  class="inline-block"
+                  placeholder="Category"
+                >
+                  <hlm-select-trigger class="w-56">
+                    <hlm-select-value />
+                  </hlm-select-trigger>
+                  <hlm-select-content>
+                    <hlm-option value="Driver">Driver</hlm-option>
+                    <hlm-option value="Manager">Manager</hlm-option>
+                    <hlm-option value="Staff">Staff</hlm-option>
+                  </hlm-select-content>
+                </brn-select>
+                <hlm-hint></hlm-hint>
+              </hlm-form-field>
+            </div>
+            <hlm-dialog-footer>
+              <button hlmBtn type="submit">Save changes</button>
+            </hlm-dialog-footer>
+          </form>
+
+
+        </hlm-dialog-content>
+      </hlm-dialog>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-50">
+          <tr>
+            <th
+              class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            >
+              Name
+            </th>
+            <th
+              class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            >
+              Role
+            </th>
+            <th
+              class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            >
+              Code
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <tr class="even:bg-slate-50" *ngFor="let person of personnels()">
+            <td class="px-6 py-4 whitespace-nowrap">
+              {{ person.firstName }} {{ " " }} {{ person.lastName }}
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">{{ person.role }}</td>
+            <td class="px-6 py-4 whitespace-nowrap">{{ person.code }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

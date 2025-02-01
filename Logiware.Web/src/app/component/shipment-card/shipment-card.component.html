@@ -1,0 +1,66 @@
+
+<section hlmCard class="m-4 h-fit bg-slate-50 shadow-[0_4px_6px_3px_rgba(0,0,0,0.1)] border-2" *ngIf="shipment()">
+  <div hlmCardHeader>
+    <h3 hlmCardTitle>{{shipment()?.shipmentCode}}</h3>
+    <h2 hlmCardDescription></h2>
+  </div>
+  <div hlmCardContent class="grid gap-4 ">
+    <h1 class="text-sm">Item(s)</h1>
+    <hlm-scroll-area class="w-full h-[150px]">
+      <div class=" ">
+
+        <div class="flex flex-row  items-center justify-between text-xs my-2 p-4 " *ngFor="let tag of shipment()?.shipmentItems">
+
+          <div class="flex flex-col justify-evenly">
+            <h1 class="text-xs text-neutral-800">Name: </h1>
+            <span class="font-semibold text-neutral-800">{{tag.ownership.item.name}}</span>
+          </div>
+          <div class="flex flex-col justify-evenly">
+            <h1 class="text-xs text-neutral-800">Name: </h1>
+            <span class="font-semibold text-neutral-800">{{tag.ownership.item.name}}</span>
+          </div>
+          <div class="flex flex-col justify-evenly">
+            <h1 class="text-xs text-neutral-800">Category </h1>
+            <span class="font-semibold text-neutral-800">{{ tag.ownership.item.category }}</span>
+          </div>
+          <div class="flex flex-col justify-evenly">
+            <h1 class="text-xs text-neutral-800">Quantity </h1>
+            <span class="font-semibold text-neutral-800">{{ tag.ownership.quantity }}</span>
+          </div>
+
+        </div>
+      </div>
+    </hlm-scroll-area>
+    <div class="flex flex-row justify-between w-full  p-4">
+
+      <div class="flex-col  items-center  text-xs my-2  " >
+        <div class="flex flex-col justify-evenly">
+
+          <span class="font-semibold text-neutral-700">Driver: </span>
+        </div>
+        <div class="flex flex-col justify-evenly">
+
+          <span class="font-semibold text-neutral-800">{{ shipment()?.driver?.firstName }} {{ shipment()?.driver?.lastName }}</span>
+        </div>
+
+      </div>
+      <div class="flex-col  items-center text-xs my-2  " >
+        <div class="flex flex-col justify-evenly">
+
+          <span class="font-semibold text-neutral-700">Authorize By: </span>
+        </div>
+        <div class="flex flex-col justify-evenly">
+
+          <span class="font-semibold text-neutral-800">{{ shipment()?.authorizedBy?.firstName }} {{ shipment()?.authorizedBy?.lastName }}</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div hlmCardFooter class="flex justify-end bg-slate-50" >
+      <a class="mt-16" [routerLink]="['receive', shipment()?.shipmentCode]" hlmBtn>recieve</a>
+    </div>
+  </div>
+
+
+</section>

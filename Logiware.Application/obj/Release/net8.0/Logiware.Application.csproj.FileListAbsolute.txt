@@ -1,0 +1,15 @@
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\bin\Release\net8.0\Logiware.Application.deps.json
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\bin\Release\net8.0\Logiware.Application.dll
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\bin\Release\net8.0\Logiware.Application.pdb
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\bin\Release\net8.0\Logiware.Domain.dll
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\bin\Release\net8.0\Logiware.Domain.pdb
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\Logiware.Application.csproj.AssemblyReference.cache
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\Logiware.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\Logiware.Application.AssemblyInfoInputs.cache
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\Logiware.Application.AssemblyInfo.cs
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\Logiware.Application.csproj.CoreCompileInputs.cache
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\Logiware.BFA31C28.Up2Date
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\Logiware.Application.dll
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\refint\Logiware.Application.dll
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\Logiware.Application.pdb
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Application\obj\Release\net8.0\ref\Logiware.Application.dll

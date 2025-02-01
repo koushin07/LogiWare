@@ -1,0 +1,38 @@
+<section hlmCard>
+  <div hlmCardHeader>
+    <h1 hlmCardTitle>Owner Details</h1>
+    <span hlmCardDescription>Information about the product owner</span>
+  </div>
+  <div hlmCardContent>
+    <div class="grid gap-4 md:grid-cols-2" *ngIf="owner()?.site">
+      <div>
+        <label hlmLabel for="siteName">Site Name</label>
+        <input
+          hlmInput
+          id="siteName"
+          [(ngModel)]="owner().site.name"
+          readonly
+        />
+      </div>
+      <div>
+        <label hlmLabelfor="location">Location</label>
+        <input
+          hlmInput
+          id="location"
+          [(ngModel)]="owner()!.site.location"
+          readonly
+        />
+      </div>
+      <div class="md:col-span-2">
+        <label hlmLabel for="ownerDescription">Description</label>
+        <textarea
+          hlmInput
+          id="ownerDescription"
+          [(ngModel)]="owner()!.site.description"
+          readonly
+          rows="3"
+        ></textarea>
+      </div>
+    </div>
+  </div>
+</section>

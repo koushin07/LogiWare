@@ -1,0 +1,77 @@
+<div class="container mx-auto p-6 space-y-6">
+  <div>
+    <section hlmCard>
+      <div hlmCardHeader>
+        <h1 hlmCardTitle>Product Overview</h1>
+        <span hlmCardDescription>View and edit product details</span>
+      </div>
+      <div hlmCardContent>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold">Item Details</h2>
+          <button hlmBtn (click)="canEditOnClick()">
+            {{ isDisabled ? "Save" : "Edit" }}
+          </button>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div>
+            <label hlmLabel for="name">Name</label>
+            <input
+              hlmInput
+              id="name"
+              [(ngModel)]="item.name"
+              [readonly]="!isDisabled"
+            />
+          </div>
+          <div class="">
+            <label hlmLabel class="mr-10" for="category">Category</label>
+            <brn-select
+              class="inline-block"
+              [placeholder]="item.category"
+              [disabled]="!isDisabled"
+            >
+              <hlm-select-trigger>
+                <hlm-select-value />
+              </hlm-select-trigger>
+              <hlm-select-content class="w-56">
+                <hlm-option value="category1">category 1</hlm-option>
+                <hlm-option value="category2">category 2</hlm-option>
+              </hlm-select-content>
+            </brn-select>
+
+
+          </div>
+          <div class="">
+            <label hlmLabel for="quantity">Quantity</label>
+            <input
+              hlmInput
+              id="quantity"
+              type="number"
+              [(ngModel)]="item.quantity"
+              [readonly]="!isDisabled"
+            />
+          </div>
+          <div class="md:col-span-2">
+            <label hlmLabel for="description">Description</label>
+            <textarea
+              class="w-full h-20"
+              hlmInput
+              id="description"
+              [(ngModel)]="item.description"
+              [readonly]="!isDisabled"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+<div>
+ <app-item-detail-owner [owner]="owner()!"/>
+</div>
+
+<div>
+  <app-item-detail-history [histories]="itemHistory"/>
+
+</div>
+ </div>

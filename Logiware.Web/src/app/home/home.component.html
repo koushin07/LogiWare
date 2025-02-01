@@ -1,0 +1,94 @@
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+  <div class="bg-white p-6 rounded-lg shadow-lg">
+    <div class="flex items-center justify-between mb-2">
+      <h3 class="text-sm font-medium text-gray-500">Total Inventory</h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 text-gray-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 13l4 4L19 7"
+        />
+      </svg>
+    </div>
+    <p class="text-2xl font-bold">{{ _dashboard()?.totalInventory }}</p>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow-lg">
+    <div class="flex items-center justify-between mb-2">
+      <h3 class="text-sm font-medium text-gray-500">Total Received</h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 text-gray-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M20 12H4"
+        />
+      </svg>
+    </div>
+    <p class="text-2xl font-bold">{{ _dashboard()?.totalReceived }}</p>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow-lg">
+    <div class="flex items-center justify-between mb-2">
+      <h3 class="text-sm font-medium text-gray-500">Missing</h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 text-gray-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+        />
+      </svg>
+    </div>
+    <p class="text-2xl font-bold">{{ _dashboard()?.totalMissing }}</p>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow-lg">
+    <div class="flex items-center justify-between mb-2">
+      <h3 class="text-sm font-medium text-gray-500">Outbound</h3>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 text-gray-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+        />
+      </svg>
+    </div>
+    <p class="text-2xl font-bold">{{ _dashboard()?.totalOutbound }}</p>
+  </div>
+</div>
+
+<div class="w-full h-fit p-10 rounded bg-white shadow-lg">
+  <h1 class="text-lg pb-4 font-medium text-gray-500">Shipment Comparison</h1>
+  <canvas
+    baseChart
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    [type]="'line'"
+    height="60"
+  >
+  </canvas>
+</div>

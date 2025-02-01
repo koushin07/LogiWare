@@ -1,0 +1,15 @@
+
+<hlm-tabs (tabActivated)="selectTab($event)" [tab]="activeTab" class='items-start block'>
+  <hlm-tabs-list class=' gap-2' aria-label='tabs example'>
+    <button hlmTabsTrigger='inbound' >In-Bound</button>
+    <button hlmTabsTrigger='outbound'>Out-Bound</button>
+  </hlm-tabs-list>
+
+  <div  hlmTabsContent='inbound' class="h-fit" >
+<app-in-bound-tab />
+   </div>
+
+  <div hlmTabsContent='outbound'>
+<app-out-bound-tab />
+  </div>
+</hlm-tabs>

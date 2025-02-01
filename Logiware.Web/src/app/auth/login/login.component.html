@@ -1,0 +1,76 @@
+  <!-- component -->
+<link
+  href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
+<div
+  class="bg-no-repeat bg-cover bg-center relative"
+  style="
+    background-image: url(https://images.unsplash.com/photo-1533378890784-b2a5b0a59d40?q=80&w=2037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  "
+>
+  <div
+    class="absolute bg-gradient-to-b from-zinc-700 to-zinc-800 opacity-65 inset-0 z-0"
+  ></div>
+  <div class="min-h-screen sm:flex sm:flex-row mx-0 justify-center">
+    <div class="flex-col flex self-center p-10 sm:max-w-5xl xl:max-w-2xl z-10">
+      <div class="self-start hidden lg:flex flex-col text-white">
+        <img src="" class="mb-3" />
+        <h1 class="mb-3 font-bold text-5xl">Hi, Welcome Back to LogiWare</h1>
+        <p class="pr-3">
+          your all-in-one inventory information system, shipment tracking, and product flow. Stay on top of your inventory with ease and precision, all in one place!
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-center self-center z-10">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()"
+        class="p-12 bg-white mx-auto rounded-2xl w-100 shadow-zinc-900 shadow-lg"
+      >
+        <div class="mb-4">
+          <h3 class="font-semibold text-2xl text-gray-800">Sign In</h3>
+          <p class="text-gray-500">Please sign in to your account.</p>
+        </div>
+        <div class="space-y-5">
+          <div class="space-y-2">
+            <label class="text-sm font-medium text-gray-700 tracking-wide"
+              >Email</label
+            >
+            <input formControlName="email"
+              class="w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-zinc-700"
+              type="email"
+              placeholder="mail@gmail.com"
+            />
+          </div>
+          <div class="space-y-2">
+            <label class="mb-5 text-sm font-medium text-gray-700 tracking-wide">
+              Password
+            </label>
+            <input formControlName="password"
+              class="w-full content-center text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-zinc-700"
+              type="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="flex items-center justify-end">
+            <div class="text-xs">
+              <span class="text-zinc-400">
+                Forgot your password?
+                <a class="text-zinc-500 underline" href="#">contact admin</a>
+              </span>
+            </div>
+          </div>
+          <div>
+            <button
+              hlmBtn
+              type="submit"
+              class="w-full flex justify-center bg-zinc-900 hover:bg-zinc-950 text-gray-100 p-3 rounded-full tracking-wide font-semibold shadow-lg cursor-pointer transition ease-in duration-500"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\bin\Debug\net8.0\Logiware.Domain.deps.json
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\bin\Debug\net8.0\Logiware.Domain.dll
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\bin\Debug\net8.0\Logiware.Domain.pdb
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.Domain.AssemblyInfoInputs.cache
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.Domain.AssemblyInfo.cs
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.Domain.csproj.CoreCompileInputs.cache
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.Domain.dll
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\refint\Logiware.Domain.dll
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\Logiware.Domain.pdb
+C:\Users\canar\RiderProjects\LogiWare\Logiware.Domain\obj\Debug\net8.0\ref\Logiware.Domain.dll

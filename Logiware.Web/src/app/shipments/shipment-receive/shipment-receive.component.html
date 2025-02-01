@@ -1,0 +1,169 @@
+<div
+  hlmCard
+  class="bg-white shadow-lg rounded-lg max-w-2xl mx-auto w-full p-8 space-y-6"
+>
+  <div hlmCardHeader>
+    <h1 hlmCardTitle class="text-3xl font-bold mb-2">Acquisition</h1>
+    <p hlmCardDescription class="text-lg font-semibold">
+      {{ availableShipment()?.shipmentCode }}
+    </p>
+  </div>
+
+  <div hlmCardContent class="space-y-12">
+    <div class="border-t border-b border-gray-200 py-4 space-y-2">
+      <p class="flex place-items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+          /></svg
+        ><span class="font-semibold">Site:</span>
+        {{ availableShipment()?.site?.name }}
+      </p>
+      <p class="flex place-items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+          /></svg
+        ><span class="font-semibold">Driver:</span>
+        {{ availableShipment()?.driver?.lastName }},
+        {{ availableShipment()?.driver?.firstName }}
+      </p>
+      <p class="flex place-items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+          /></svg
+        ><span class="font-semibold">Approved By:</span>
+        {{ availableShipment()?.authorizedBy?.lastName }},
+        {{ availableShipment()?.authorizedBy?.firstName }}
+      </p>
+    </div>
+    <div class="space-y-4">
+      <h2 class="text-xl font-semibold">Expected Items</h2>
+      <ul class="space-y-2">
+        <hlm-table class="w-full">
+          <hlm-trow class="bg-primary rounded">
+            <hlm-th class="w-24 text-primary-foreground">Name</hlm-th>
+            <hlm-th class="w-24 text-primary-foreground">Code</hlm-th>
+            <hlm-th class="w-24 text-primary-foreground">AVL</hlm-th>
+            <hlm-th class="w-24 text-primary-foreground">Receive</hlm-th>
+            <hlm-th class="w-24 text-primary-foreground"></hlm-th>
+          </hlm-trow>
+          <hlm-scroll-area class="w-full h-36 border-2 shadow p-2">
+            <hlm-trow class="hover:bg-slate-200 "
+              *ngFor="let shipmentItem of availableShipment()?.shipmentItems"
+            >
+              <hlm-td class="w-24">{{
+                shipmentItem.ownership.item.name
+              }}</hlm-td>
+              <hlm-td class="w-24">{{
+                shipmentItem.ownership.item.itemCode
+              }}</hlm-td>
+              <hlm-td class="w-24">{{ shipmentItem.quantity}}</hlm-td>
+              <hlm-td class="w-24">
+                <input
+                  type="number"
+                  [min]="1"
+                  [max]="shipmentItem.ownership.quantity"
+                  [(ngModel)]="shipmentItem.receive"
+                  class="border-2 rounded px-2 py-1 w-16 text-right"
+                  (keydown.enter)="receiveItem(shipmentItem)"
+                />
+              </hlm-td>
+              <hlm-td class="w-20">
+                <button hlmBtn size="sm" (click)="receiveItem(shipmentItem)">
+                  <hlm-icon
+                    size="sm"
+                    class="mr-2"
+                    name="lucideArrowDownCircle"
+                  />
+                  Receive
+                </button>
+              </hlm-td>
+            </hlm-trow>
+          </hlm-scroll-area>
+        </hlm-table>
+      </ul>
+    </div>
+
+    <div class="space-y-4">
+      <h2 class="text-xl font-semibold">Received Items</h2>
+      <ul class="space-y-2">
+        <hlm-table class="w-full">
+          <hlm-trow class="bg-primary rounded">
+            <hlm-th class="w-32 text-primary-foreground">Name</hlm-th>
+            <hlm-th class="w-32 text-primary-foreground">Code</hlm-th>
+            <hlm-th class="w-32 text-primary-foreground">Quantity</hlm-th>
+            <hlm-th class="w-32 text-primary-foreground"></hlm-th>
+          </hlm-trow>
+          <hlm-scroll-area class="w-full h-36 border-2 shadow p-2">
+            <hlm-trow class="hover:bg-slate-200"
+              *ngFor="let shipmentItem of selectedShipment()?.shipmentItems"
+            >
+              <hlm-td class="w-32">{{
+                shipmentItem.ownership.item.name
+              }}</hlm-td>
+              <hlm-td class="w-32 -translate-x-2">{{
+                shipmentItem.ownership.item.itemCode
+              }}</hlm-td>
+              <hlm-td class="w-32 translate-x-2">{{
+                shipmentItem.quantity
+              }}</hlm-td>
+              <hlm-td class="w-32 translate-x-2">
+                <button
+                  variant="destructive"
+                  hlmBtn
+                  size="sm"
+                  (click)="removeItem(shipmentItem)"
+                >
+                  <hlm-icon size="sm" class="mr-2" name="lucideArrowUpCircle" />
+                  Remove
+                </button>
+              </hlm-td>
+            </hlm-trow>
+            <hlm-trow *ngIf="selectedShipment()?.shipmentItems!.length <= 0">
+              <hlm-td class="mx-auto">
+
+                <span>No items received yet.</span>
+              </hlm-td>
+            </hlm-trow>
+          </hlm-scroll-area>
+        </hlm-table>
+      </ul>
+    </div>
+  </div>
+  <button hlmBtn (click)="openDialog()">Finish Transaction</button>
+</div>

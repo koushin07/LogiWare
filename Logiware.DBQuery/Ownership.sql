@@ -1,0 +1,6 @@
+SELECT TOP (1000) [Id]
+      ,[Quantity]
+      ,[SiteId]
+      ,[ItemId]
+      ,[CreatedAt]
+  FROM [logiware].[dbo].[Ownerships]

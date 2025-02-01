@@ -1,0 +1,8 @@
+SELECT TOP (1000) [Id]
+      ,[FirstName]
+      ,[LastName]
+      ,[SiteId]
+      ,[Role]
+      ,[CreatedAt]
+      ,[Code]
+  FROM [logiware].[dbo].[Personnels]

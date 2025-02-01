@@ -1,0 +1,6 @@
+@Logiware.API_HostAddress = http://localhost:5283
+
+GET {{Logiware.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

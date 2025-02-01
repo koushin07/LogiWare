@@ -1,0 +1,60 @@
+<hlm-dialog-header>
+  <h2 brnDialogTitle hlm class="text-2xl font-bold mb-4">
+    Transaction Details
+  </h2>
+
+  <div
+    brnDialogDescription
+    hlm
+    class="bg-white rounded-lg p-8 max-w-md w-full"
+  >
+    <div class="space-y-2">
+      <p>
+        <span class="font-semibold">Shipment Code:</span>
+        {{ shipment.shipmentCode }}
+      </p>
+      <p>
+        <span class="font-semibold">Driver:</span>
+        {{ shipment.driver.lastName }},
+        {{ shipment.driver.firstName }}
+      </p>
+      <p>
+        <span class="font-semibold">Approved By:</span>
+        {{ shipment.authorizedBy.lastName }},
+        {{ shipment.authorizedBy.firstName }}
+      </p>
+    </div>
+    <h3 class="text-xl font-semibold mt-4 mb-2">Received Items</h3>
+
+    <ul class="space-y-1">
+      <li
+        *ngFor="let Receive of shipment.shipmentReceives"
+        class="flex justify-between"
+      >
+        <span>{{ Receive.item.name }}</span>
+        <span>{{ Receive.ReceiveQuantity }}</span>
+      </li>
+    </ul>
+    <h3 class="text-xl font-semibold mt-4 mb-2">Missing Items</h3>
+    <ul class="space-y-1">
+      <li
+        *ngFor="let shipmentItems of shipment.shipmentReceives"
+        class="flex justify-between"
+      >
+        <span>{{ shipmentItems.item.name }}</span>
+        <span class="text-red-500 font-semibold">{{
+          shipmentItems.MissingQuantity
+        }}</span>
+      </li>
+    </ul>
+  </div>
+</hlm-dialog-header>
+<hlm-dialog-footer>
+  <button
+    hlmBtn
+    class="mt-6 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors w-full"
+    (click)="Submit()"
+  >
+    Confirm
+  </button>
+</hlm-dialog-footer>
