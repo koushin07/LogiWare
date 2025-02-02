@@ -14,12 +14,12 @@ export class PersonnelService {
   createPersonnel(personnel: CreatePersonnel) {
     return this.http.post<Personnel>(this.baseUrl + "/Personnel", personnel)
   }
-  getDriverPersonnel() {
-    return this.http.get<Personnel[]>(this.baseUrl + "/Personnel/driver")
+  getDriverPersonnel(siteId: number) {
+    return this.http.get<Personnel[]>(this.baseUrl + "/Personnel/driver/"+siteId)
   }
 
-  getManagerPersonnel() {
-    return this.http.get<Personnel[]>(this.baseUrl + "/Personnel/manager")
+  getManagerPersonnel(siteId: number) {
+    return this.http.get<Personnel[]>(this.baseUrl + "/Personnel/manager/"+siteId)
   }
 
   getAuthorizePersonnel(code: string) {

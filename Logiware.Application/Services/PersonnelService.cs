@@ -31,7 +31,7 @@ public class PersonnelService : IPersonnelService
     {
         return _mapper.Map<PersonnelDto>(await _uow.PersonnelRepository.GetById(id));
     }
-    
+
     public async Task<List<PersonnelDto>> GetBySite(int siteId)
     {
         var personnel = await _uow.PersonnelRepository.GetBySiteId(siteId);
@@ -50,16 +50,16 @@ public class PersonnelService : IPersonnelService
         personnel.Site = site;
         var newPersonnel = await _uow.PersonnelRepository.Insert(personnel);
         if (!await _uow.Complete()) throw new BadRequestException("error in saving personel");
-       
+
         return _mapper.Map<PersonnelDto>(newPersonnel);
     }
 
-    public async Task<List<PersonnelDto>> GetByRole(string role)
+    public async Task<List<PersonnelDto>> GetByRole(string role, int siteId)
     {
         var personnel = new List<Personnel>();
-        if (role == "manager") personnel = await _uow.PersonnelRepository.GetManagerPersonnel();
-        if (role == "driver") personnel = await _uow.PersonnelRepository.GetDriverPersonnel();
-        if (role == "staff") personnel = await _uow.PersonnelRepository.GetManagerPersonnel();
+        if (role == "manager") personnel = await _uow.PersonnelRepository.GetManagerPersonnel(siteId);
+        if (role == "driver") personnel = await _uow.PersonnelRepository.GetDriverPersonnel(siteId);
+        if (role == "staff") personnel = await _uow.PersonnelRepository.GetManagerPersonnel(siteId);
 
         return _mapper.Map<List<PersonnelDto>>(personnel);
 
@@ -67,11 +67,11 @@ public class PersonnelService : IPersonnelService
 
     public async Task<PersonnelDto> GetByCode(string code)
     {
-        
+
         var personnel = await _uow.PersonnelRepository.GetPersonnelByCode(code);
         if (personnel is null) throw new NotFoundException("incorrect authorization");
         return _mapper.Map<PersonnelDto>(personnel);
     }
 
-    
+
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Logiware.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aa24589d3525e35bedb195d76d73685d70c63b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+809b00ea5dc4539dcc39da0654e849e8bba174f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Logiware.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Logiware.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

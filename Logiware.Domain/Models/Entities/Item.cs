@@ -8,20 +8,20 @@ public class Item : BaseEntity
     public string Category { get; set; }
 
     public List<Ownership> Ownerships { get; set; } = new List<Ownership>();
-   
+
     public Item()
     {
         ItemCode = GenerateCode();
-        CreatedAt = DateTime.Now;
+        CreatedAt = DateTime.UtcNow;
     }
 
     public Item(string name, string description, string category, int quantity)
     {
-        ItemCode = GenerateCode(); 
+        ItemCode = GenerateCode();
         Name = name;
         Description = description;
         Category = category;
-        CreatedAt = DateTime.Now;
+        CreatedAt = DateTime.UtcNow;
     }
 
     public void AddOwnerShip(Site site, int quantity)
@@ -42,9 +42,9 @@ public class Item : BaseEntity
 
         return $"ITM-{number}";
     }
-    
-   
 
 
-   
+
+
+
 }

@@ -10,11 +10,11 @@ namespace Logiware.Infrastructure.Repositories;
 public class ItemRepository : IItemRepository
 {
     private readonly MyDbContext _context;
-  
+
     public ItemRepository(MyDbContext context)
     {
         _context = context;
-    
+
     }
     public async Task<List<Item>> GetAll()
     {
@@ -29,7 +29,7 @@ public class ItemRepository : IItemRepository
 
     public async Task<Item> Insert(Item entity)
     {
-        entity.CreatedAt = DateTime.Now;
+        entity.CreatedAt = DateTime.UtcNow;
         var item = await _context.Items.AddAsync(entity);
         return item.Entity;
     }
@@ -44,7 +44,7 @@ public class ItemRepository : IItemRepository
         throw new NotImplementedException();
     }
 
-   
+
 
     public async Task<Item> Upsert(Item item)
     {
@@ -66,7 +66,7 @@ public class ItemRepository : IItemRepository
     {
         var result = await _context.Items.Include(i=>i.Ownerships)
             .Where(i=>i.Ownerships.Any(o=>o.SiteId == siteId)).ToListAsync();
-        
+
         return result;
     }
 

@@ -52,13 +52,13 @@ export const routes: Routes = [
         path: 'shipment/receive/:code',
         component: ShipmentReceiveComponent
       },
+
       {
         path: "site",
         children: [
           {
             path: "profile",
-            component: ProfileComponent,
-            canActivate: [adminGuard],
+            component: ProfileComponent
           }
         ]
       }

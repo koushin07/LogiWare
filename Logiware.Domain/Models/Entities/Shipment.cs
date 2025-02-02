@@ -19,7 +19,7 @@ public class Shipment : BaseEntity
     public Site DestinationSite { get; set; }
     public List<ShipmentItem> ShipmentItems { get; set; } = new List<ShipmentItem>();
 
-    
+
     public Shipment()
     {
         CreatedAt = DateTime.Now;
@@ -38,26 +38,26 @@ public class Shipment : BaseEntity
     }
 
 
-  
-   
+
+
 
     public void AddShipmentItem(Ownership ownership, int quantity)
     {
 
         var shipmentItem = new ShipmentItem(this, ownership, quantity)
         {
-            CreatedAt = DateTime.Now
+            CreatedAt = DateTime.UtcNow
         };
-       
+
         ShipmentItems.Add(shipmentItem);
     }
 
     private string GenerateCode()
     {
         var randomNumber = new Random().Next(1000, 10000);
-        
+
         // Get the current date in the format yyyyMMdd
-        var currentDate = DateTime.Now.ToString("yyyyMMdd");
+        var currentDate = DateTime.UtcNow.ToString("yyyyMMdd");
 
         // Combine parts to form the CustomId
         return $"SPT-{randomNumber}-{currentDate}";
@@ -67,12 +67,12 @@ public class Shipment : BaseEntity
     public void ChangeStatus(Status status)
     {
         Status = status;
-        StatusUpdate = DateTime.Now;
+        StatusUpdate = DateTime.UtcNow;
     }
 
 
-   
-    
-    
-    
+
+
+
+
 }

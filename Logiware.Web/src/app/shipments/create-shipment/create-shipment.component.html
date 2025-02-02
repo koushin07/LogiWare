@@ -104,17 +104,17 @@
               class="absolute z-10 w-full bg-white border rounded-md shadow-lg max-h-60 overflow-auto"
             >
               <li
-                *ngFor="let item of filteredItems"
-                (click)="displayItem(item)"
+                *ngFor="let owner of filteredItems"
+                (click)="displayItem(owner.item, owner.quantity)"
                 class="px-3 py-2 hover:bg-gray-100 cursor-pointer"
               >
-                {{ item.name }}
+                {{ owner.item.name }}
               </li>
             </ul>
           </div>
           <span class="w-20 m-auto flex justify-between">
             <p class="text-slate-500">MAX:</p>
-            <p class="text-zinc-900">{{ selectedItem().quantity }}</p>
+            <p class="text-zinc-900">{{ selectedQuantity() }}</p>
           </span>
           <input
             type="number"
@@ -232,7 +232,7 @@
             (click)="onSubmit()"
             variant="default"
           >
-            Submit
+            Ship
           </button>
         </div>
       </div>

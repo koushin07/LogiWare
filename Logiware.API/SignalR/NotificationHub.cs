@@ -27,12 +27,13 @@ namespace Logiware.API.SignalR
             var receiver = await _siteService.GetSiteById(notification.ReceiverId);
             var sender = await _siteService.GetSiteById(notification.SenderId);
             if(receiver is null || sender is null) throw new HubException("no sender or receiver");
+            Console.WriteLine("reciever "+receiver.Id.ToString());
             await Clients.User(receiver.Id.ToString()).SendAsync("ReceiveNotification", notification);
 
-            
+
 
         }
 
-        
+
     }
 }

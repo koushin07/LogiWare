@@ -23,10 +23,10 @@ public class PersonnelController : BaseAPIController
         return Ok(await _personnelService.CreatePersonnel(createPersonnelDto));
     }
 
-    [HttpGet("{role}")]
-    public async Task<ActionResult<List<PersonnelDto>>> GetDriverPersonnel(string role)
+    [HttpGet("{role}/{siteId}")]
+    public async Task<ActionResult<List<PersonnelDto>>> GetDriverPersonnel(string role, int siteId)
     {
-       var personnels = await _personnelService.GetByRole(role);
+       var personnels = await _personnelService.GetByRole(role,siteId);
         return Ok(personnels);
     }
 

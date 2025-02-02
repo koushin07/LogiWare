@@ -40,7 +40,7 @@ export class AuthenticationService {
   login(model: FormGroup){
     return this.http.post<Authenticated>(this.baseUrl+"/Authentication/login",model.value).pipe(
       map(res=>{
-        console.log(res)
+
         this.currentUserSource.next(res);
         this.token.set(res.token);
 
@@ -60,10 +60,8 @@ export class AuthenticationService {
 
   public setCurrentUser(auth: Authenticated){
     const token = localStorage.getItem('token')
-    console.log(token)
     if(!token) return;
     auth.token =this.removeCharToToken(token)
-    console.log(auth.token)
     this.currentUserSource.next(auth);
     this.site.set(auth.user.site)
     this.user.set(auth.user)
@@ -73,7 +71,6 @@ export class AuthenticationService {
 
   private decodeToken(token: string){
     const decoded = JSON.parse(atob(token))
-    console.log(decoded);
     return decoded
   }
 
@@ -85,7 +82,6 @@ export class AuthenticationService {
   }
 
   private removeCharToToken(token: string) {
-    console.log("removing")
     return token.slice(0, 4)  + token.slice(5);
   }
 
@@ -103,7 +99,6 @@ export class AuthenticationService {
     this.currentUserSource.next(null);
     this.site.set({} as Site)
     this.user.set(null)
-    console.log("Logged out");
     window.location.reload();
   }
 }

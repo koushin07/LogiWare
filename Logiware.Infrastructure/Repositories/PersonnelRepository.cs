@@ -53,14 +53,14 @@ public class PersonnelRepository : IPersonnelRepository
         return await _context.Personnels.FirstOrDefaultAsync(p => p.LastName == lastName && p.FirstName == firstName);
     }
 
-    public async Task<List<Personnel>?> GetDriverPersonnel()
+    public async Task<List<Personnel>?> GetDriverPersonnel(int siteId)
     {
-        return await _context.Personnels.AsNoTracking().Where(p => p.Role == Role.Driver).ToListAsync();
+        return await _context.Personnels.AsNoTracking().Where(p => p.Role == Role.Driver && p.SiteId == siteId).ToListAsync();
     }
 
-    public async Task<List<Personnel>?> GetManagerPersonnel()
+    public async Task<List<Personnel>?> GetManagerPersonnel(int siteId)
     {
-        return await _context.Personnels.AsNoTracking().Where(p => p.Role == Role.Manager).ToListAsync();
+        return await _context.Personnels.AsNoTracking().Where(p => p.Role == Role.Manager && p.SiteId == siteId).ToListAsync();
     }
 
     public Task<Personnel?> GetPersonnelByCode(string code)

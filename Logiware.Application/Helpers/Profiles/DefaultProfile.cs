@@ -10,7 +10,7 @@ public class DefaultProfile : Profile
     {
         CreateMap<User, UserDto>().ReverseMap();
         CreateMap<Site, SiteDto>().ReverseMap();
-        
+
         CreateMap<CreateSiteDto, Site>().ReverseMap();
         CreateMap<SiteDto, CreateSiteDto>().ReverseMap();
         CreateMap<Personnel, CreatePersonnelDto>().ReverseMap();
@@ -28,12 +28,12 @@ public class DefaultProfile : Profile
             .ReverseMap();
 
         CreateMap<ShipmentItemDto, ShipmentItem>()
-            .ForMember(dest => dest.Shipment, opt => opt.Ignore()) 
+            .ForMember(dest => dest.Shipment, opt => opt.Ignore())
             .ReverseMap();
         CreateMap<CreateShipmentDto, Shipment>()
-            
+
             .ForMember(dest => dest.DriverId, opt => opt.MapFrom(src => src.DriverId))
-             .ForMember(dest => dest.ShipmentItems, opt => opt.Ignore()) 
-            .ForMember(dest => dest.ShipmentDate, opt => opt.MapFrom(src => DateTime.Now));
+             .ForMember(dest => dest.ShipmentItems, opt => opt.Ignore())
+            .ForMember(dest => dest.ShipmentDate, opt => opt.MapFrom(src => DateTime.UtcNow));
     }
 }

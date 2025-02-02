@@ -51,6 +51,7 @@ import { HlmSpinnerComponent } from '@spartan-ng/ui-spinner-helm';
 import { toast } from 'ngx-sonner';
 import { ShipmentService } from '../../_services/shipment.service';
 import { NotificationService } from '../../_services/notification.service';
+import { Ownership } from '../../_model/ownership';
 @Component({
   selector: 'app-create-shipment',
   standalone: true,
@@ -88,9 +89,10 @@ import { NotificationService } from '../../_services/notification.service';
 })
 export class CreateShipmentComponent {
   selectedItem = signal<Item>({} as Item);
+  selectedQuantity = signal<Number>(0)
   quantity = signal<number | null>(null);
-  availableItems: Item[] = [];
-  filteredItems: Item[] = [];
+  availableItems: Ownership[] = [];
+  filteredItems: Ownership[] = [];
   isSubmissionValid = true;
 
   selectedSite: Site = {} as Site;
@@ -113,10 +115,15 @@ export class CreateShipmentComponent {
     private shipmentService: ShipmentService,
     private notificationService: NotificationService
   ) {
-    itemService.getItem(authService.site().id).subscribe({
-      next: (res) => (this.availableItems = res),
+    itemService.getOwner(authService.site().id).subscribe({
+      next: (res) => {
+        this.availableItems = res;
+        // (this.availableItems = {...res.map(o=>o.item), })
+        console.log("items below")
+        console.log(res)
+      },
     });
-    personnelService.getDriverPersonnel().subscribe((res) => {
+    personnelService.getDriverPersonnel(authService.site().id).subscribe((res) => {
       this.drivers = res;
     });
 
@@ -130,8 +137,8 @@ export class CreateShipmentComponent {
 
   filterItems(value: string) {
     const filterValue = value.toLowerCase();
-    this.filteredItems = this.availableItems.filter((item) =>
-      item.name.toLowerCase().includes(filterValue)
+    this.filteredItems = this.availableItems.filter((owner) =>
+      owner.item.name.toLowerCase().includes(filterValue)
     );
   }
 
@@ -143,7 +150,8 @@ export class CreateShipmentComponent {
     console.log(this.filteredSites);
   }
 
-  displayItem(item: Item) {
+  displayItem(item: Item, quantity: number) {
+    this.selectedQuantity.set(quantity)
     this.selectedItem.set(item);
     this.filteredItems = [];
   }
@@ -173,6 +181,20 @@ export class CreateShipmentComponent {
     console.log(this.checkOut());
     console.log(this.checkOut());
     this.selectedItem.set({} as Item);
+    this.filteredItems = this.filteredItems.map(owner => {
+      if (this.selectedItem().id === owner.item.id) {
+          // Create a new object with the updated quantity
+          return {
+              ...owner,
+              quantity: owner.quantity - this.quantity()!
+          };
+      }
+      return owner;
+  });
+
+    // this.filteredItems = [...this.filteredItems.a]
+    this.selectedQuantity.set(0)
+
     this.quantity.set(null);
   }
 
@@ -203,9 +225,9 @@ export class CreateShipmentComponent {
     console.log(isItemInShipment);
 
     const checkSelectedItem = this.availableItems.some(
-      (i) => i.id == selectedItem.id
+      (o) => o.item.id == selectedItem.id
     );
-
+    console.log(` quantity: ${this.quantity}`);
     console.log(`check quantity: ${checkquantity}`);
     console.log(
       `check if selected Item is part of avialble item: ${checkSelectedItem}`
@@ -230,7 +252,8 @@ export class CreateShipmentComponent {
         toast.success('shipment checkout', {
           description: 'success',
         });
-        this.notificationService.sendNotification({message: "shipment in-bound received", receiverId: this.checkOut().destinationSiteId!, senderId: this.checkOut().siteId!})
+        window.location.reload
+        this.notificationService.sendNotification({ message: "shipment in-bound received", receiverId: this.checkOut().destinationSiteId!, senderId: this.checkOut().siteId! })
       },
     });
   }

@@ -10,7 +10,6 @@ export const jwtInterceptor: HttpInterceptorFn = (req, next) => {
   authService.currentUser$.pipe(take(1)).subscribe({
 
     next: (user) => {
-      console.log(user?.token);
 
       if (user && user.token) {
         req = req.clone({

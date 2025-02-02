@@ -26,6 +26,8 @@ if (builder.Environment.IsEnvironment("Testing"))
 builder.Services.AddDbContext<MyDbContext>(opt =>
 {
     opt.UseNpgsql(connectionString);
+    opt.EnableSensitiveDataLogging();  // Enable detailed logging
+    opt.LogTo(Console.WriteLine);
 });
 
 builder.Services.AddApplicationServices();
@@ -65,6 +67,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 var app = builder.Build();
+var logger = app.Services.GetRequiredService<ILogger<Program>>();
+logger.LogInformation($"Database connection string: {connectionString}");
 
 // Use exception handling middleware
 app.UseMiddleware<ExceptionMiddleware>();
