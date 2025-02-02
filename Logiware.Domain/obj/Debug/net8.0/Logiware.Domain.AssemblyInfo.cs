@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Logiware.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+809b00ea5dc4539dcc39da0654e849e8bba174f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58582cd1710e6a62aaf2b3e98d690bbb51dfb0a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Logiware.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Logiware.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
