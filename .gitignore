@@ -1,0 +1,8 @@
+Logiware.API/obj
+Logiware.Infrastructure/obj
+Logiware.Application/obj
+Logiware.Domain/obj
+Logiware.Test/obj
+Logiware.DBQuery
+.vs
+

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Logiware.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6469d5b0d915968ac0fe4813eafbf30a132bc282")]
 [assembly: System.Reflection.AssemblyProductAttribute("Logiware.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Logiware.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iE0BehfP0Mu/PqB7iVAQ5sCPLPlsVjrrZWnRzHV9z7U=",
+  "Hash": "plG20ZlC/Vf7Lt8Mnds9ffi8i+ArWCvsR1MhAxKp/P0=",
   "Source": "Logiware.API",
   "BasePath": "_content/Logiware.API",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\main-6MJKQ7E6.js",
+      "Identity": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\main-U75YTOVD.js",
       "SourceId": "Logiware.API",
       "SourceType": "Discovered",
       "ContentRoot": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
       "BasePath": "_content/Logiware.API",
-      "RelativePath": "main-6MJKQ7E6.js",
+      "RelativePath": "main-U75YTOVD.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\main-6MJKQ7E6.js"
+      "OriginalItemSpec": "wwwroot\\main-U75YTOVD.js"
     },
     {
       "Identity": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\polyfills-SCHOHYNV.js",
