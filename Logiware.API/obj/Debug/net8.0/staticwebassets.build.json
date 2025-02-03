@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "plG20ZlC/Vf7Lt8Mnds9ffi8i+ArWCvsR1MhAxKp/P0=",
+  "Hash": "E4dYOp2WRyx8dscvvb5exgM0SRngbKpph1qMKgO7lQM=",
   "Source": "Logiware.API",
   "BasePath": "_content/Logiware.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Logiware.API\\wwwroot",
       "Source": "Logiware.API",
-      "ContentRoot": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
       "BasePath": "_content/Logiware.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\3rdpartylicenses.txt",
+      "Identity": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\3rdpartylicenses.txt",
       "SourceId": "Logiware.API",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
       "BasePath": "_content/Logiware.API",
       "RelativePath": "3rdpartylicenses.txt",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\3rdpartylicenses.txt"
     },
     {
-      "Identity": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\index.html",
       "SourceId": "Logiware.API",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
       "BasePath": "_content/Logiware.API",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\main-U75YTOVD.js",
+      "Identity": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\main-U75YTOVD.js",
       "SourceId": "Logiware.API",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
       "BasePath": "_content/Logiware.API",
       "RelativePath": "main-U75YTOVD.js",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\main-U75YTOVD.js"
     },
     {
-      "Identity": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\polyfills-SCHOHYNV.js",
+      "Identity": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\polyfills-SCHOHYNV.js",
       "SourceId": "Logiware.API",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
       "BasePath": "_content/Logiware.API",
       "RelativePath": "polyfills-SCHOHYNV.js",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\polyfills-SCHOHYNV.js"
     },
     {
-      "Identity": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\styles-BWESLJMF.css",
+      "Identity": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\styles-BWESLJMF.css",
       "SourceId": "Logiware.API",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\canar\\RiderProjects\\LogiWare\\Logiware.API\\wwwroot\\",
       "BasePath": "_content/Logiware.API",
       "RelativePath": "styles-BWESLJMF.css",
       "AssetKind": "All",
